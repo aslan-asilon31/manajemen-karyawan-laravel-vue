@@ -24,8 +24,6 @@ class UserController extends Controller
 
         $users = DB::select($sql);
 
-        dd($users);
-
         return $users;
     }
 }

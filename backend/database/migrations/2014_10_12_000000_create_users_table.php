@@ -15,7 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('user_id')->nullable();
             $table->string('department_id')->nullable();
-            $table->string('file_id')->nullable();
+            $table->string('role_id')->nullable();
+            $table->string('file_id1')->nullable();
+            $table->string('file_id2')->nullable();
+            $table->string('file_id3')->nullable();
             $table->string('name')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
@@ -23,7 +26,6 @@ return new class extends Migration
             $table->string('image', 2048)->nullable();
             $table->date('date_birth')->nullable();
             $table->string('place_birth')->nullable();
-            $table->string('role')->nullable();
             $table->string('department')->nullable();
             $table->string('phone')->nullable();
             $table->string('address')->nullable();
